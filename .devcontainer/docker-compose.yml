@@ -1,0 +1,25 @@
+networks:
+  react-component-devcontainer-network:
+    name: react-component-devcontainer-network
+
+services:
+  react-dev:
+    container_name: react-dev
+    build:
+      context: ./volumes/dockerfile
+      dockerfile: Dockerfile
+    image: telenity/rnd/react-devcontainer:monorepo
+    networks:
+      react-component-devcontainer-network: null
+    volumes:
+      - ..:/workspace
+    # ports:
+    #   - "8000:8000"
+    # environment:
+    #   - PYTHONPATH=/workspace,
+    # entrypoint: node
+    # command:
+    #   - node
+    # command: >
+    #   bash -c "
+    #     cd /workspace

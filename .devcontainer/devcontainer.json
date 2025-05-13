@@ -1,0 +1,33 @@
+{
+  "name": "react-app-component",
+  "dockerComposeFile": [
+    "./docker-compose.yml"
+    // ,"./docker-compose.override.yml"
+  ],
+  // "runServices": [
+  //   "dev"
+  // ],
+  "service": "react-dev",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-next",
+        "github.vscode-pull-request-github"
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  },
+  "workspaceFolder": "/workspace",
+  // "remoteUser": "root",
+  // "remoteEnv": {
+  //   "SHELL": "/bin/sh"
+  // }
+  // "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  // "postCreateCommand": "",
+}
