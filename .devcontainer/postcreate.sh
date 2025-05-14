@@ -22,7 +22,7 @@ pnpm create vite apps/comp1-app --template react-ts
 cd /workspace/apps/comp1-app
 pnpm install
 
-cat > /workspace/apps/comp1-app/vite.config.ts <<'EOF'
+cat > /workspace/apps/comp1-app/vite.config.ts << EOF
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
@@ -36,7 +36,7 @@ export default defineConfig({
 EOF
 
 # Create a simple React component that uses the Logger from comp1
-cat > /workspace/apps/comp1-app/src/App.tsx <<'EOF'
+cat > /workspace/apps/comp1-app/src/App.tsx << EOF
 import Compomompo from 'comp1'
 
 function App() {
@@ -83,7 +83,7 @@ pnpm add --filter --save-peer comp1 react react-dom
 # module system, library files, and other compiler options.
 # The "include" and "exclude" sections specify which files and
 # directories should be included or excluded from the compilation.
-cat > /workspace/packages/comp1/tsconfig.json <<'EOF'
+cat > /workspace/packages/comp1/tsconfig.json << EOF
 // Compiler options for TypeScript
 {
     "compilerOptions": {
@@ -143,7 +143,7 @@ EOF
 
 
 # Create a simple test file for the component
-cat > /workspace/packages/comp1/src/index.tsx <<'EOF'
+cat > /workspace/packages/comp1/src/index.tsx << EOF
 type CompomompoProps = { message: string };
 
 function Compomompo({ message }: CompomompoProps) {
