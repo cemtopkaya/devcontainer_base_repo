@@ -13,6 +13,7 @@ services:
       react-component-devcontainer-network: null
     volumes:
       - ..:/workspace
+      - $HOME/.gitconfig:/root/.gitconfig:ro
     # ports:
     #   - "8000:8000"
     # environment:
