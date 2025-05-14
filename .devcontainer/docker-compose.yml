@@ -16,10 +16,4 @@ services:
     # ports:
     #   - "8000:8000"
     # environment:
-    #   - PYTHONPATH=/workspace,
-    # entrypoint: node
-    # command:
-    #   - node
-    # command: >
-    #   bash -c "
-    #     cd /workspace
+    #   - PYTHONPATH=/workspace

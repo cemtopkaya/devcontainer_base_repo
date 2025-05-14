@@ -2,11 +2,7 @@
   "name": "react-app-component",
   "dockerComposeFile": [
     "./docker-compose.yml"
-    // ,"./docker-compose.override.yml"
   ],
-  // "runServices": [
-  //   "dev"
-  // ],
   "service": "react-dev",
   "customizations": {
     "vscode": {
@@ -24,10 +20,5 @@
     }
   },
   "workspaceFolder": "/workspace",
-  // "remoteUser": "root",
-  // "remoteEnv": {
-  //   "SHELL": "/bin/sh"
-  // }
-  // "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
-  // "postCreateCommand": "",
+  "postCreateCommand": "./.devcontainer/postcreate.sh"
 }
