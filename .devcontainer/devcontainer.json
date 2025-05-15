@@ -4,6 +4,12 @@
     "./docker-compose.yml"
   ],
   "service": "react-dev",
+  // "runServices": [
+  //   "devcontainer"
+  //   ,"sonar"
+  //   ,"jenkins"
+  //   ,"nexus"
+  // ],
   "customizations": {
     "vscode": {
       "extensions": [
@@ -21,4 +27,27 @@
   },
   "workspaceFolder": "/workspace",
   "postCreateCommand": "./.devcontainer/postcreate.sh"
+  // devcontainer.json dosyasında kullanılabilecek başlıca alanlar:
+  // "name": Geliştirme konteynerinin adı.
+  // "build": Konteynerin nasıl oluşturulacağını tanımlar (Dockerfile yolu, argümanlar vs).
+  // "image": Kullanılacak hazır Docker imajı.
+  // "context": Docker build işlemi için kullanılacak bağlam (klasör).
+  // "dockerFile": Kullanılacak Dockerfile'ın yolu.
+  // "runArgs": Konteyner başlatılırken kullanılacak ek argümanlar.
+  // "settings": VS Code ayarlarını özelleştirir (örn. uzantılar, tema).
+  // "extensions": Otomatik olarak yüklenecek VS Code uzantıları listesi.
+  // "postCreateCommand": Konteyner oluşturulduktan sonra çalıştırılacak komut.
+  // "postStartCommand": Konteyner başlatıldıktan sonra çalıştırılacak komut.
+  // "postAttachCommand": VS Code konteynere bağlandıktan sonra çalıştırılacak komut.
+  // "mounts": Konteynere eklenmesi gereken ek dosya veya klasörler.
+  // "forwardPorts": Geliştirme sırasında yönlendirilecek portlar listesi.
+  // "features": Konteynere eklenecek ek özellikler veya araçlar.
+  // "shutdownAction": Konteyner kapatıldığında yapılacak işlemler.
+  // "workspaceMount": Workspace'in konteynere nasıl monte edileceğini tanımlar.
+  // "workspaceFolder": Workspace'in konteynerdeki yolu.
+  // "init": true, // Konteyner başlatılırken bir init işlemi başlatır (örn. tini).
+  // "initializeCommand": "echo 'Initializing...'", // Konteyner oluşturulmadan önce çalıştırılacak komut.
+  // "remoteEnv": Konteynerdeki ortam değişkenlerini ayarlar.
+  // "remoteUser": Konteynerde kullanılacak kullanıcı adı.
+
 }
